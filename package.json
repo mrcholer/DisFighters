@@ -1,0 +1,43 @@
+{
+  "name": "disfighters",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "ludicord build",
+    "start": "ludicord start",
+    "test:rules": "tsx --test tests/engine.test.ts tests/duel-room.test.ts tests/competition.test.ts tests/avatar.test.ts tests/gamepads.test.ts",
+    "test:browser": "node scripts/browser.mjs test",
+    "test:production": "tsx --test tests/production.test.ts",
+    "browser:install": "node scripts/browser.mjs install chromium",
+    "screenshots": "node scripts/browser.mjs test tests/browser/showcase.spec.ts --trace off"
+  },
+  "dependencies": {
+    "ludicord": "^4.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "vite": "^7.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "description": "A real-time 2D 1v1 Discord fighting Activity built with Ludicord, with winner-stays PvP, tournaments, spectating, and Xbox/PlayStation controller support.",
+  "license": "MIT",
+  "author": "mrcholer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcholer/DisFighters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrcholer/DisFighters/issues"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

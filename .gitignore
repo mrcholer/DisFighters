@@ -1,0 +1,16 @@
+node_modules/
+.ludicord/
+.ludicord-build-*/
+.ludicord-previous-*/
+.env
+.env.*
+!.env.example
+dist/
+*.log
+.cache/
+.artifacts/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
